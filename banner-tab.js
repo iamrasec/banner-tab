@@ -1,6 +1,6 @@
 jQuery.noConflict();
  
-(function( $ ) {
+(function($) {
   $(document).ready(function(){
     $(".column-slides").hover(function() {
       var hover_index = $(this).attr('data-index');
@@ -16,4 +16,4 @@ jQuery.noConflict();
     $('.mobile-hero').slick();
     
   });
-})( jQuery );
+})(jQuery);
