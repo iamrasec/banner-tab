@@ -1,0 +1,146 @@
+#banner_tab {
+  height: 100vh;
+}
+
+#banner_tab .hero-area {
+  position: relative;
+}
+
+#banner_tab .hero-background-wrapper {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#banner_tab .hero-item-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#banner_tab .hero-item-bg.hidebg {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+#banner_tab .hero-item-bg.showbg {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+#banner_tab .hero-item-bg img {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner_tab .row {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+#banner_tab .col-md-3 {
+  padding: 0;
+  width: 25%;
+  float: left;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#banner_tab .hero-item {
+  height: 100vh;
+  position: relative;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#banner_tab .hero-item-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 6;
+}
+
+#banner_tab .hero-overlay {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  transition: 0.3s;
+}
+
+#banner_tab .hero-item-caption {
+  bottom: 50px;
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 18px;
+}
+
+#banner_tab h5.hero-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #f5834e;
+  border-radius: 20px;
+  padding: 10px !important;
+  border: 1px solid #f5834e;
+}
+
+#banner_tab .text-uppercase {
+  text-transform: uppercase;
+}
+
+#banner_tab .col-md-3:hover .hero-overlay {
+  background: rgba(0, 0, 0, 0.36);
+  transition: 0.3s;
+}
+
+#banner_tab .col-md-3:hover .hero-item-caption {
+  bottom: 100px;
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+#banner_tab .col-md-3:hover .hero-item-caption h5.hero-item-title {
+  color: #f5834e;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 10px !important;
+}
+
+@media only screen and (max-width: 425px) {
+  .mobile-hero-item-textwrap {
+    position: absolute;
+    bottom: 90px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #banner_tab {
+		height: 75vh;  
+	}
+	
+  .mobile-hero-item {
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    display: block;
+    height: 75vh;
+  }
+  
+  .mobile-hero-item .hero-item-desc {
+    color: #666666;
+  }
+}
